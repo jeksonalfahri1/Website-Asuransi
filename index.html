@@ -1,57 +1,156 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>Proteksi Bisnis Anda</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body { font-family: Arial; margin:0; text-align:center; }
-        .section { padding: 30px 20px; }
-        .dark { background:#2c3e50; color:white; }
-        .btn {
-            background:#25D366;
-            color:white;
-            padding:15px 20px;
-            text-decoration:none;
-            border-radius:8px;
-            display:inline-block;
-            margin-top:15px;
-            font-weight:bold;
-        }
-        h1 { font-size:28px; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proteksi Bisnis - Jekson</title>
+
+<style>
+body {
+    margin:0;
+    font-family: 'Segoe UI', sans-serif;
+    background:#f5f7fa;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(135deg, #1f4037, #2c5364);
+    color:white;
+    padding:80px 20px;
+    text-align:center;
+}
+.hero h1 {
+    font-size:32px;
+    margin-bottom:15px;
+}
+.hero p {
+    font-size:16px;
+    opacity:0.9;
+}
+
+/* BUTTON */
+.btn {
+    background:#25D366;
+    color:white;
+    padding:15px 25px;
+    border-radius:50px;
+    text-decoration:none;
+    display:inline-block;
+    margin-top:20px;
+    font-weight:bold;
+    transition:0.3s;
+}
+.btn:hover {
+    transform:scale(1.05);
+}
+
+/* SECTION */
+.section {
+    padding:50px 20px;
+    text-align:center;
+}
+
+/* CARD */
+.cards {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.card {
+    background:white;
+    margin:10px;
+    padding:20px;
+    border-radius:15px;
+    width:260px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* DARK */
+.dark {
+    background:#2c3e50;
+    color:white;
+}
+
+/* TESTIMONI */
+.testimoni {
+    font-style:italic;
+    margin-top:20px;
+}
+
+/* FLOATING WA */
+.wa-float {
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:15px;
+    border-radius:50%;
+    font-size:20px;
+    text-decoration:none;
+}
+</style>
+
 </head>
 
 <body>
 
-<div class="section dark">
+<!-- HERO -->
+<div class="hero">
     <h1>1 Kecelakaan Kerja Bisa Rugi Ratusan Juta</h1>
-    <p>Apakah bisnis Anda sudah siap menghadapi risiko?</p>
-    <a class="btn" href="https://wa.me/6285727925753">Konsultasi Gratis</a>
+    <p>Lindungi bisnis Anda sebelum terlambat</p>
+    <a class="btn" href="https://wa.me/6285727925753?text=Halo%20saya%20tertarik%20asuransi%20bisnis">Konsultasi Gratis</a>
 </div>
 
+<!-- MASALAH -->
 <div class="section">
-    <h2>Risiko Nyata di Lapangan</h2>
-    <p>❌ Kecelakaan kerja<br>
-       ❌ Kerusakan proyek<br>
-       ❌ Kehilangan barang cargo</p>
+    <h2>Risiko Nyata di Dunia Bisnis</h2>
+    <p>Kejadian tak terduga bisa menghancurkan keuangan perusahaan dalam sekejap</p>
 </div>
 
+<!-- LAYANAN -->
 <div class="section dark">
-    <h2>Solusi untuk Bisnis Anda</h2>
-    <p>Saya Jekson siap membantu Anda memilih proteksi terbaik sesuai kebutuhan bisnis Anda.</p>
-    <a class="btn" href="https://wa.me/6285727925753">Chat Sekarang</a>
+    <h2>Layanan Kami</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Asuransi Karyawan</h3>
+            <p>Perlindungan tenaga kerja & kecelakaan</p>
+        </div>
+
+        <div class="card">
+            <h3>Asuransi Proyek</h3>
+            <p>Proteksi proyek konstruksi</p>
+        </div>
+
+        <div class="card">
+            <h3>Asuransi Cargo</h3>
+            <p>Perlindungan pengiriman barang</p>
+        </div>
+    </div>
 </div>
 
+<!-- TENTANG -->
 <div class="section">
-    <h2>Kenapa Harus Sekarang?</h2>
-    <p>Risiko tidak bisa diprediksi. Lindungi bisnis Anda sebelum terlambat.</p>
+    <h2>Tentang Saya</h2>
+    <p>Saya Jekson, konsultan asuransi yang membantu bisnis menghindari kerugian besar akibat risiko tak terduga.</p>
 </div>
 
+<!-- TESTIMONI -->
 <div class="section dark">
-    <h2>Konsultasi GRATIS</h2>
+    <h2>Apa Kata Klien</h2>
+    <p class="testimoni">"Kami sangat terbantu saat terjadi klaim besar"</p>
+</div>
+
+<!-- CTA -->
+<div class="section">
+    <h2>Konsultasi GRATIS Sekarang</h2>
     <p>Tanpa biaya, tanpa komitmen</p>
-    <a class="btn" href="https://wa.me/6285727925753">Hubungi Saya</a>
+    <a class="btn" href="https://wa.me/6285727925753?text=Halo%20saya%20ingin%20konsultasi%20asuransi%20bisnis">Chat WhatsApp</a>
 </div>
+
+<!-- FLOATING WA -->
+<a class="wa-float" href="https://wa.me/6285727925753?text=Halo%20saya%20tertarik">💬</a>
 
 </body>
 </html>
